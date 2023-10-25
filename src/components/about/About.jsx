@@ -16,7 +16,6 @@ const About = () => {
 
                 <div className="about__data">
                     <Info />
-
                     <p className="about__description">Machine Learning Engineer, 
                     I create various machine learning model. In the past I have done 2 relevant 
                     internships.</p>
