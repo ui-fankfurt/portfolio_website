@@ -8,7 +8,7 @@ const Services = () => {
         setToggleState(index);
     };
     return (
-        <section className="services section" id="services">
+        <section className="services section" id="experience">
             <h2 className="section__title">Experience</h2>
             <span className="section__subtitle">My past internship experiences</span>
 
@@ -70,6 +70,47 @@ const Services = () => {
 
                             <h3 className="services__modal-title">Data Scientist Intern</h3>
                             <p className="services__modal-description">Hogetic Lab</p>
+
+                            <ul className="services__modal-services grid">
+                                <li className="services__modal-service">
+                                    <i className="uil uil-check-circle services__modal-icon"></i>
+                                    <p className="services__modal-info">I build machine learning 
+                                    models that contributes to effective business decisions.</p>
+                                </li>
+
+                                <li className="services__modal-service">
+                                    <i className="uil uil-check-circle services__modal-icon"></i>
+                                    <p className="services__modal-info">Fine-tuning Large Language 
+                                    Models</p>
+                                </li>
+
+                                <li className="services__modal-service">
+                                    <i className="uil uil-check-circle services__modal-icon"></i>
+                                    <p className="services__modal-info">Building advanced computer 
+                                    vision models</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="services__content">
+                    <div>
+                        <i className="uil uil-web-grid services__icon"></i>
+                        <h3 className="services__title">Market Reseacher, <br />Ensemblau Event and Marketing</h3>
+                    </div>
+
+                    <span className="services__button" onClick={() => toggleTab(2)}>
+                        View More
+                    <i className="uil uil-arrow-right services__button-icon"></i></span>
+
+                    <div className={toggleState === 2 ? 
+                        "services__modal active-modal" : "services__modal"}>
+                        <div className="services__modal-content">
+                            <i onClick={() => toggleTab()} className="uil uil-times services__modal-close"></i>
+
+                            <h3 className="services__modal-title">Market Researcher</h3>
+                            <p className="services__modal-description">Ensemblau Event and Marketing</p>
 
                             <ul className="services__modal-services grid">
                                 <li className="services__modal-service">
