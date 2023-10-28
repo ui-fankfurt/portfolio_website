@@ -1,8 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "./header.css";
 
 
 const Header = () => {
+    useEffect(() => {
+        const handleScroll = () => {
+            const header = document.querySelector(".header");
+            if (header) {
+                if (window.scrollY >= 80) {
+                    header.classList.add("scroll-header");
+                } else {
+                    header.classList.remove("scroll-header");
+                }
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        // Clean up the event listener when the component unmounts
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
     /*=============== Toggle Menu ===============*/
     const[Toggle, showMenu] = useState(false);
 
@@ -26,7 +45,7 @@ const Header = () => {
                         </li>
 
                         <li className='nav__item'>
-                            <a href="skills" className="nav__link">
+                            <a href="#skills" className="nav__link">
                                 <i className="uil uil-file-alt nav__icon"></i> Skills
                             </a>
                         </li>
@@ -38,14 +57,14 @@ const Header = () => {
                         </li>
 
                         <li className='nav__item'>
-                            <a href="portfolio" className="nav__link">
+                            <a href="#portfolio" className="nav__link">
                                 <i className="uil uil-scenery nav__icon"></i> Portfolio
                             </a>
                         </li>
 
                         <li className='nav__item'>
-                            <a href="contact" className="nav__link">
-                                <i className="uil uil-message nav__icon"></i> Contact
+                            <a href="#qualification" className="nav__link">
+                                <i className="uil uil-graduation-cap nav__icon"></i> Qualification
                             </a>
                         </li>
 

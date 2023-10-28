@@ -8,7 +8,7 @@ const Qualification = () => {
         setToggleState(index);
     };
     return (
-        <section className="qualification section">
+        <section className="qualification section" id="qualification">
             <h2 className="section__title">Qualification</h2>
             <span className="section__subtitle">My personal journey</span>
 
@@ -28,7 +28,7 @@ const Qualification = () => {
                         "qualification__button qualification__active button--flex" : 
                         "qualification__button button--flex"}
                         onClick={() => toggleTab(2)}>
-                        <i className="uil uil-graduation-cap qualification__icon"></i>
+                        <i className="uil uil-briefcase-alt qualification__icon"></i>
                         Experience
                     </div>
                 </div>
@@ -146,7 +146,7 @@ const Qualification = () => {
                                 <span className="qualification__subtitle">Ensemblau Event and Marketing</span>
                                 <div className="qualification__calendar">
                                     <i className="uil uil-calendar-alt"></i>
-                                    2020 - 2021
+                                    Dec 2020 - Jul 2021
                                 </div>
                             </div>
                         </div>
