@@ -1,5 +1,6 @@
 import React from 'react';
 import "./work.css";
+import "../services/services.css"
 import Works from "./Works.jsx"
 
 const Work = () => {

@@ -22,7 +22,7 @@ const Works = () => {
     }, [item]);
 
     const handleClick = (e, index) => {
-        setItem({name: e.target.textContent.toLoweCase()});
+        setItem({name: e.target.textContent.toLowerCase()});
         setActive(index);
     }
     return (
