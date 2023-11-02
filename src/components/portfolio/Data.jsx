@@ -5,6 +5,7 @@ import Work4 from "../../assets/work4.jpg";
 import Work5 from "../../assets/work5.jpg";
 import neural_transfer from "../../assets/neural_transfer.png";
 import ner_result from "../../assets/ner_result.png";
+import mnist from "../../assets/mnist.png";
 
 
 export const projectsData = [
@@ -56,7 +57,7 @@ export const projectsData = [
     },
     {
         id: 7,
-        image: Work1,
+        image: mnist,
         title: "Digit Recognition",
         category: "computer vision",
         git_url: 'https://github.com/ui-fankfurt/digit_recognition'
