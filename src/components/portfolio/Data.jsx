@@ -6,6 +6,7 @@ import Work5 from "../../assets/work5.jpg";
 import neural_transfer from "../../assets/neural_transfer.png";
 import ner_result from "../../assets/ner_result.png";
 import mnist from "../../assets/mnist.png";
+import gan from "../../assets/gan.png";
 
 
 export const projectsData = [
@@ -27,7 +28,7 @@ export const projectsData = [
 
     {
         id: 3,
-        image: Work3,
+        image: gan,
         title: "Hand Image Generation (GAN)",
         category: "generative AI",    
         git_url: 'https://github.com/ui-fankfurt/GAN_generated_hands'    
