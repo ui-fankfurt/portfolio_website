@@ -64,7 +64,7 @@ export const projectsData = [
         git_url: 'https://github.com/ui-fankfurt/digit_recognition'
     },
     {
-        id: 7,
+        id: 8,
         image: neural_transfer,
         title: "Neural Transfer",
         category: "generative AI",
