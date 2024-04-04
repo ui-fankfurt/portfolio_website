@@ -31,12 +31,25 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1.25rem;
     border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.work__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: auto;
 }
 
 .work__img {
     width: 295px;
     border-radius: 1rem;
-    margin-bottom: var(--mb-1);
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: 1.5rem; /* Adjust this value to move the image higher or lower */
 }
 
 .work__title {
@@ -53,6 +66,7 @@
     column-gap: 0.25rem;
     cursor: pointer;
 }
+
 
 .work__button-icon {
     font-size: 1rem;
@@ -75,65 +89,64 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5);
-    z-index:var(--z-modal);
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: var(--z-modal);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 1rem;
     opacity: 0;
     visibility: hidden;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .work__modal-content {
-    width: 500px;
+    width: 600px;
     position: relative;
     background-color: var(--container-color);
     padding: 4.5rem 2.5rem 2.5rem;
-    border-radius:1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .work__modal-close {
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
-    font-size:1.5rem;
+    font-size: 1.5rem;
     color: var(--title-color);
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.work__modal-close:hover {
+    color: var(--title-color-dark);
 }
 
 .work__modal-title {
     text-align: center;
-}
-
-
-.work__modal-description {
-    text-align: left;
-}
-
-.work__modal-title {
-    font-size: var(--h3-font-size);
-    font-weight: var(--font-medium);
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
     margin-bottom: var(--mb-1);
 }
 
 .work__modal-description {
+    text-align: center;
     font-size: var(--small-font-size);
-    margin-bottom: var(--mb-3);
+    margin-bottom: var(--mb-2);
 }
 
 .work__modal-services {
-    row-gap: 0.75rem;
+    row-gap: 1rem;
 }
 
 .work__modal-service {
     display: flex;
     align-items: center;
-    column-gap: .5rem;
+    column-gap: 0.5rem;
 }
 
-.services__modal-icon {
+.work__modal-icon {
     color: var(--title-color);
     font-size: 1.1rem;
 }
@@ -146,6 +159,21 @@
 .active-modal {
     opacity: 1;
     visibility: visible;
+}
+
+.work__modal-button {
+    display: inline-block;
+    background-color: var(--title-color);
+    color: var(--container-color);
+    padding: 1rem 1.75rem;
+    border-radius: 0.5rem;
+    font-weight: var(--font-medium);
+    transition: 0.3s;
+    margin-top: var(--mb-2);
+}
+
+.work__modal-button:hover {
+    background-color: var(--title-color-dark);
 }
 
 /*=============== BREAKPOINTS ===============*/
